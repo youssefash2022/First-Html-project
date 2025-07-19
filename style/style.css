@@ -1,0 +1,983 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+ body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    height: 4000px;
+ }
+
+ .div1{
+    background-image: url(../imges/front-view-cologne-bottle-rotten-tree-branch-isolated-light-blue-background_140725-145204.jpg);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  background-size: cover;
+}
+
+
+ .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+   
+ }
+ .container{position: relative;}
+.header1{
+    height: 55px;
+    width: 100%;
+    background-color: rgba(36, 1, 31, 0.7);
+    position: relative;
+    z-index: 30;
+    position: fixed;
+}
+.fa-house{
+font-size: 30px;
+color: aliceblue;
+margin-top: 15;
+margin-left: 15px;
+}
+[type="text"]{
+    position: relative;
+    width:200px ;
+    height: 30px;
+    background-color:white;
+    border-radius: 20px;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 25px;
+    border: 0;
+    
+}
+
+.fa-magnifying-glass{
+    font-size:20px;
+    position: absolute;
+    float: left;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.headerlinks{
+    list-style: none;
+    float: right;
+}
+.headerlinks li{
+    margin-right: 25px;
+   margin-top: 13px; 
+    display: inline-block;
+}
+.headerlinks li a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.headerlinks li a:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: blue;
+    opacity: 0;
+}
+
+.headerlinks li a:hover:after {
+    width: 100%;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+ .list-dropdown{
+    position: relative;
+    display: inline-block;
+ }
+    
+ .dropdownk{
+
+   position: absolute;
+    width: 150px;
+    padding: 5px;
+    background-color: #a00f0f;
+    text-align: center;
+    left: 0;
+    top: 150%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 50;
+    border: 1px solid rgb(95, 95, 192);
+    border-radius: 10px;
+    margin-bottom: 5px;
+
+ }
+
+ .dropdownkK{
+    
+    color: rgb(143, 143, 240);
+    display: block;
+    padding: 10px 0px;
+    text-align: center;
+    margin: 0;
+
+ }
+
+ .list-dropdown:hover .dropdownk{
+    visibility: visible;
+    opacity: 1;
+}
+.dropdown li {
+    display: block;
+}
+/* ---------------------------------------------------header -------------------------------*/
+.mainparagraph{
+    width: 60%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+}
+.title2{
+    font-size: 65px;
+    text-transform: uppercase;
+}
+.paragraph1{
+    color: #b3b1b1;
+    font-size: 15px;
+    padding: 12px  0px;
+    letter-spacing: 2px;
+}
+.btn1{
+    font-size: 18px;
+    border: 0;
+    border-radius: 15px;
+    text-transform: capitalize;
+    padding: 16px 14px;
+}
+.btn1:hover{
+    opacity: 0.4;
+}
+.btn2{
+    font-size: 18px;
+    border: 0;
+    border-radius: 15px;
+    text-transform: capitalize;
+    padding: 16px 14px;
+    color: #161313;
+    background-color: rgb(152, 152, 223);
+}
+.btn2:hover{
+    opacity: 0.4;
+}
+/*-- ------------------------------section 1  finshed-------------------------------------- */
+.h2welcome{
+text-align: center;
+padding-top: 70px;
+font-size: 40px;
+}
+
+.hrwelcome{
+    width: 90px;
+   border: 2px solid rgb(108, 108, 214);
+    margin: auto;
+    margin-top: 10px;
+    
+}
+.parent{
+    width: 100%;
+    height: 100vh;
+    text-transform: capitalize;
+}
+.sec2div1{
+   float: left;
+    width: 320px;
+    height: 220px;
+    margin-top: 80px;
+    margin-left: 100px;
+    text-align: center;
+    border: 1px solid rgb(2, 1, 10);
+   position: relative;
+   border-radius: 10px;
+ 
+}
+.iconsec2{
+    font-size: 30px;
+    color: rgb(238, 82, 142);
+    padding-top: 20px;
+}
+.sec2link{
+    text-decoration: none;
+    display: block;
+    color:rgb(238, 82, 142) ;
+}
+.sec2h2 , .sec2p2 , .sec2link{
+    padding-top: 22px;
+}
+
+.sec2div1:hover .sec2link{
+color: rgb(238, 82, 142) ;
+}
+.sec2div1:hover .iconsec2{
+    color:rgb(238, 82, 142) ;
+    }
+.sec2div1:after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(202, 201, 240);
+    opacity: 0;
+    z-index: -1;
+}
+.sec2div1:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+ .sec2div1:hover .sec2h2 {
+    color: #fff;
+}
+.sec2p2{
+    color: rgb(109, 108, 108);
+}
+.sec2div1:hover .sec2p2{
+    color: black;
+}
+/* ------------------section2---------------- */
+.parent3{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(199, 255, 236);
+    position: relative;
+}
+.featured{
+    padding-top: 30px;
+    text-align: center;
+    font-family: serif;
+    font-size: 40px;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.linefea{
+ border: 3px solid rgb(0, 128, 85);
+  border-radius: 5px;
+  width: 100px;
+  margin: auto
+}
+.containerphootoo{
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+/* the first photo from the photos section start */
+
+.ph1{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin-right: 20px;
+    display: flex;          
+  gap: 20px; 
+}
+.phh1{
+    width: 300px;
+    height: 300px;
+}
+.parent33 {
+    position: absolute;  
+    top: 0; 
+    left: 0;  
+    width: 300px;
+    height: 300px;
+    z-index: 2; 
+    background-color: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+    
+}
+
+.parent33 h3{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    color: #b3b1b1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+.parent33 P{
+    text-align: center;
+    color: #fff;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  height: 100px;           
+  font-size: 40px;
+  color: grey;
+}
+.icon-container I{
+    background-color: aliceblue;
+    margin: 5px;
+}
+.ph1:hover .parent33 {
+    visibility: visible;
+
+ }
+ /* firtst photo finshed */
+
+ /* Photo section finshed ///////////////////////////////////////////////*/
+
+/* //////////////////////////////////////////////////////section 3 */
+ .sec3cont{
+    height: 100vh;
+    width: 100%;
+ }
+ .sec3cont p{
+
+    text-align: center;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 40px;
+ }
+.sec3cont hr{
+
+    width: 200px;
+    height:5px;
+    background-color: #220072;
+    border-radius: 4px;
+    margin: auto;
+}
+/* ///////////////////////////////////////////////////////// */
+.Sec3IconContener{
+
+    display: flex;
+    gap: 10px;
+
+    margin-top: 70px;
+}
+
+    
+.sec3ph1{
+
+    height: 200px;
+    width: 350px;
+    border-radius: 3%;
+    border-color: #220072;
+    border-style: solid;
+    border-width: 1px;
+    position: relative;
+    padding-top: 10px;
+    padding-left: 5px;
+    margin-left: 50px;
+}
+ .sec3ph1 i{
+    color: #220072;
+    font-size: 40px;
+    position: absolute;    
+}
+
+.contsec3ph{
+    position: relative;
+    float: left;
+    width: 310px;
+    margin-left: 20px;
+}
+
+.sec3ph1 h2 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200px;
+    text-align: center; 
+}
+.sec3ph1 p{
+    font-size: 20px;
+    color: #b3b1b1;
+}
+  
+.sec3ph1::after {
+    position: absolute;
+    content:"" ;
+    background-color: #d4bcff;
+    opacity: 0;
+    height:0;
+    width:0;
+    top: 0;
+    left: 0;
+
+}
+
+  .sec3ph1:hover::after {
+    
+    opacity: 0.3;
+    transition: 0.5s;
+    height: 100%;
+    width: 100%;
+
+  }
+.sec3ph1:hover h2,
+.sec3ph1:hover i {
+    color: rgb(38, 0, 59); 
+    transition: color 0.5s ease;
+}
+.sec3ph1:hover p{
+    color: black
+
+}
+/* /////////////////////////section 4/////////////////// */
+.sec4parent{
+  position: relative;
+  padding-left: 100px;
+}
+
+ .sec4parent h2{
+
+    font-size: 30px;
+    /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    margin-top: 40px;
+ }
+.sec4parent hr{
+
+    width: 80px;
+    height:5px;
+    background-color: #220072;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.sec4parent P{
+
+    color: #b3b1b1;
+    text-align: left;
+    width: 500px;
+}
+/* ///////////////LIST///////// */
+
+.sec4parent ul{
+    list-style: none;
+    margin-top: 50px;
+}
+.sec4parent li{
+    margin-bottom: 30px;
+    color: #b3b1b1;
+}
+.sec4parent i{
+    color: #220072;
+}
+/* //////////////////imge////////// */
+.sec4ph {
+    float: right;
+    height: 500px;
+}
+.sec4phimg{
+
+    height: 450px;
+    width: 400px;
+    position: absolute;
+    left: 1000px;
+    top: -50px;
+}
+.circle{
+    background-color: #777777;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    margin: 5px;
+}
+.ccontener{
+    position: absolute;
+    left: 1300px;
+    top: 400px;
+}
+.circle:hover{
+    background-color: #220072;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////section5 /////////////////////////// */
+
+.sec5parent {
+    margin-top: 200px;
+    width: 100%;
+    height: 400px;
+    background-image: url(../imges/front-view-elegant-perfume-colored-flowers-light-blue-background_140725-144930.jpg);
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.layout77{
+     margin-top: 200px;
+    width: 100%;
+    height: 400px;
+    background-color:rgba(0, 0, 0, 0.7)
+}
+.sec5icons{
+    width: fit-content;
+    display: inline-block;
+    margin: 150px;
+}
+.sec5icons i{
+    color: rgb(175, 142, 252);
+    font-size: 40px;
+    margin-bottom: 10px;
+    width: 30px;
+    padding-left: 18px;     
+}
+.sec5icons p,
+.sec5icons h2{
+    color: rgb(221, 228, 235);
+    text-align: center;
+    width: 80px;
+}
+/* /////////////////////////////////////////section6/////////////////////////// */
+
+ 
+.sec6parent{
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/choose.jpg);
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.sec6-container{
+    width: 80%;
+    margin: auto;
+}
+.sec6items{
+    padding-top: 150px;
+   overflow: auto;
+   
+}
+.sec6item{
+    float: left;
+    text-align: center;
+    width: 25%;
+   
+}
+ .sec6-item-icon{
+    color: #989ef0;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+.sec6-item-title{
+    color: #fff;
+    
+}
+.sec6-item-text{
+    color: #fff;
+     
+}
+/* ---------------------/------------------------------ */
+.pricing{
+   padding-top: 120px;
+   text-align: center; 
+}
+.pricing-container{
+    width: 80%;
+    margin: auto;
+}
+.pricing-divs{
+    overflow: auto;
+     padding: 50px 
+}
+.pricimg-div1{
+    width: 30%;
+    border: 1px solid rgb(135, 135, 230);
+    padding: 30px 15px;
+    float: left;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+.pricing-title{
+    font-size: 40px;
+}
+.div-pric2{
+    margin: 0 5%;
+}
+.pricimg-div1-p{
+    text-transform: uppercase;
+    color: black;
+}
+.pricing-div1-month{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid rgb(135, 135, 230);
+    margin: 20px auto;
+    padding: 12px 0;
+   
+}
+.h3-dollar{
+font-size: 35px;
+}
+.span-month {
+text-transform: uppercase;
+}
+.pricing-ul,.pricing-btn{
+    list-style: none;
+    text-transform: capitalize;
+}
+.pricing-ul li{
+    padding: 10px 0;
+}
+.pricing-btn{
+    width: 170px;
+    height: 30px;
+    border: 2px solid  rgb(135, 135, 230);
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.pricimg-div1:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color:rgb(135, 135, 230);
+    transition: .5s;
+    opacity: .5;
+    border-radius: 10px;
+    z-index: -1;
+}
+.pricimg-div1:hover:after{
+width: 100%;
+height: 100%;
+opacity: 0.5;
+transition: 0.5s;
+}
+.pricimg-div1:hover .pricing-div1-month  {
+    border: 2px solid rgb(26, 26, 163); 
+   
+}
+.pricimg-div1:hover .pricimg-div1-p {
+color: rgb(26, 26, 163) ;
+}
+/* -----------/--------------------------- */
+.parent-about{
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/front-view-cologne-bottle-rotten-tree-branch-isolated-light-blue-background_140725-145204.jpg);
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 130px;
+}
+.overlay-about {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.container-about{
+    width: 80%;
+    margin: auto;
+}
+.about-content{
+    margin: auto;
+    width: 90%;
+    height: 100%;
+    overflow: auto;
+}
+.about-item1{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.about-item1-info{
+    text-transform: capitalize;
+    padding: 130px 40px 10px 150px;
+position: relative;
+line-height: 1.4;
+  
+}
+.about-item1-info img{
+    border-radius: 50%;
+    position: absolute;
+    left: 50px;
+    top: 120px;
+}
+.about-p{
+margin: 0px 30px 0px 50px;
+line-height: 1.4;
+text-transform: capitalize;
+color: black;
+}
+.about-item1-info h3{
+font-size: 30px;
+color: #fff;
+}
+.about-item1-info span{
+color: rgb(5, 3, 128);
+font-size: 20px;
+}
+.team-title{
+    padding-top: 120px;
+}
+.team-title h2{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 40px;
+}
+/* ------------------------------------------------ */
+.team-container{
+    width: 80%;
+    margin: auto;
+}
+.team-parent{
+    overflow: auto;
+    height: 100vh;
+    margin-top: 50px;
+}
+.team-items{
+    float: left;
+    width: 30%;
+    background-color:rgb(223, 221, 221);
+    text-align: center;
+    padding: 18px 14px;
+    position: relative;
+    border-radius: 10px;
+}
+.team-item2{
+    margin: 0px 5%;
+}
+.team-div1-img1{
+    width: 85%;
+    margin: auto;
+    position: relative;
+}
+.team-div1-img1 img{
+    width: 100%;
+}
+.team-icons{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+}
+.team-items:hover .team-icons{
+    visibility: visible;
+}
+.team-icons a{
+    width: 40px;
+    height: 40px;
+    display: block;
+    color: #fff;
+    background-color: rgb(101, 101, 236);
+    margin-left: auto;
+}
+.team-icons a i{
+   line-height: 40px;
+}
+.team-info-title{
+    text-transform: capitalize;
+    color: rgb(20, 20, 20);
+    padding: 12px 0px;
+}
+.team-info-paragraph{
+text-transform: uppercase;
+color: rgb(90, 88, 88);
+}
+.team-items:hover .team-info-title{
+color: #fff;
+z-index: 6;
+}
+.team-items:hover .team-info-paragraph{
+    color: rgb(84, 84, 238);
+}
+.team-items:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color:rgb(179, 179, 245);
+    transition: .5s;
+    opacity: .5;
+    border-radius: 10px;
+    
+}
+.team-items:hover:after{
+width: 100%;
+height: 100%;
+opacity: 0.5;
+transition: 0.5s;
+}
+/* -------/-------------------------------------------------------- */
+.news-title{
+    margin-top: -190px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 30px;
+}
+.news-container{
+    width: 80%;
+    margin: auto;
+}
+.news-parent{
+    height: auto;
+    margin-top: 50px;
+    overflow: auto;
+}
+.news-item{
+    width: 30%;
+    text-align: center;
+    height: auto;
+    float: left;
+    border: 1px solid rgb(100, 100, 241);
+    border-radius: 10px;
+    position: relative;
+}
+.news-item:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color:rgb(179, 179, 245);
+    transition: .5s;
+    opacity: .5;
+    border-radius: 10px;
+    z-index: -1;
+}
+.news-item:hover:after{
+width: 100%;
+height: 100%;
+opacity: 0.5;
+transition: 0.5s;
+}
+.news-item:hover .news-icons ul  {
+color: rgb(2, 2, 153);
+}
+.news-item:hover h3{
+    color: #fff;
+}
+
+.news-item:hover .news-icons p {
+    color: rgb(2, 2, 153);
+}
+.news-icons ul {
+list-style: none;
+}
+.news-icons ul li{
+   display: inline-block;
+   margin-right: 15px;
+   margin-top: 25px;
+}
+.news-icons h3{
+   margin: 15px 0px;
+}
+.news-icons{
+    margin-bottom: 15px;
+}
+.news-read-more{
+    text-decoration: none;
+   
+}
+.news-icons p{
+    margin-bottom: 25px;
+    color: rgb(90, 88, 88);
+}
+.news-item img{
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.mg{
+    margin: 0px 5%;
+}
+.ffff{
+    color: rgb(79, 79, 233);
+}
+/* /-------------------------------------------------------- */
+.footer{
+    width: 100%;
+    background-color: #d1d3f0;
+    padding: 20px 0px;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+.content-footer{
+    margin: auto;
+    height: 300px;
+width: 40%;
+text-align: center;
+}
+.img-footer , .img-footer img{
+width:250px;
+height: 200px;
+margin: auto;
+border-radius: 10px;
+}
+.img-footer{
+    height: 30%;
+}
+.ul-footer{
+    margin-top: 130px;
+}
+.ul-footer ul{
+    list-style: none;
+    
+}
+.ul-footer ul li{
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #9198f7;
+    color: #fff;
+    font-size: 30px;
+   padding-top: 11px;
+   position: relative;
+}
+.ul-footer p{
+font-size: 13px;
+text-transform: uppercase;
+color: rgb(100, 99, 99);
+padding-top: 10px;
+}
+.ul-footer ul li:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color:rgb(179, 179, 245);
+    transition: .5s;
+    opacity: .5;
+    border-radius: 10px;
+}
+.ul-footer ul li:hover{
+background-color: #4e43e9;
+transition: 0.5s;
+}
+
+
+
